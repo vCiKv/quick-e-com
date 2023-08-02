@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'PlusJakarta';
+  src: url('/notification/fonts/PlusJakartaSans-VariableFont_wght.ttf');
+}
+
+@layer base {
+  :root {
+    --color-light-red: 0deg 100% 67%;
+    --color-orangey-yellow: 39deg 100% 56%;
+    --color-green-teal: 166deg 100% 37%;
+    --color-cobalt-blue: 234deg 85% 45%;
+    --color-pale-blue: 221deg 100% 96%;
+    --color-light-lavender: 241deg 100% 89%;
+    --color-darkgray-blue: 224deg 30% 27%;
+  }
+
+  .notification {
+    min-width: 100%;
+    min-height: 100%;
+    font-family: 'PlusJakarta', 'Arial', 'sans-serif';
+    font-weight: 500;
+    @apply text-gray-800
+  }
+}

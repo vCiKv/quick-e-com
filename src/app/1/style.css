@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+  .btn{
+    @apply border-0 bg-purple-500 text-white  text-center rounded-full cursor-pointer transition;
+  }
+  .btn-flat{
+    @apply border-0 bg-purple-500 text-white  text-center rounded-lg cursor-pointer transition;
+  }
+  .btn-flat-alt{
+    @apply text-center rounded-lg border bg-white cursor-pointer transition;
+  }
+  .btn-outline{
+    @apply border border-purple-500 rounded-full text-purple-500 cursor-pointer transition;
+  }
+
+  .btn:hover,.btn-flat:hover{
+    @apply bg-purple-600 scale-105
+  }
+  .btn-outline:hover,.btn-outline.active{
+    @apply  border-purple-500 text-white bg-purple-500; 
+  }
+ 
+}

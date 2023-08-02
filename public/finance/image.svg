@@ -1,0 +1,13 @@
+<svg width="500" height="250">
+    <defs>
+        <clipPath id="circleView">
+            <circle cx="250" cy="125" r="125" fill="#FFFFFF" />
+        </clipPath>
+    </defs>
+    <image 
+      width="500" 
+      height="250" 
+      xlink:href="https://images.unsplash.com/photo-1531771686035-25f47595c87a?" 
+      clip-path="url(#circleView)"
+    />
+ </svg>

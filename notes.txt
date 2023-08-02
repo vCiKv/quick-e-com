@@ -1,0 +1,6 @@
+search function cannot diff no result and empty
+send text data in lowercase 
+show feedback for actions (i.e add-to-cart)
+add ratings maybe ??
+work on product card(buy now effects/add to cart) and pagenation 
+use session to save cart

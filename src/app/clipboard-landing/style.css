@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+  font-family:'Bai Jamjuree'; 
+  src: url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+}
+
+@layer base{
+  .clipboard{
+    font-family: 'Bai Jamjuree', sans-serif !important;
+    font-size: 18px;
+    @apply text-dark-grayish text-center
+  }
+  h1{
+    @apply font-semibold my-4
+  }
+  h2{
+    @apply font-semibold mb-1
+  }
+  p{
+    opacity: 0.8;
+  }
+}
+@layer components{
+  .section{
+    @apply container mx-auto px-4 my-32
+  }
+  .btn{
+    @apply text-center rounded-full w-full py-3 text-white text-sm
+  }
+  .img-container{
+    margin: 40px 0;
+  }
+  .img-container img{
+    margin:0 auto
+  }
+}
+@layer utilities{
+  .btn-primary{
+    @apply bg-strong-cyan shadow-sm shadow-strong-cyan
+  }
+  .btn-secondary{
+    @apply bg-light-blue-2 shadow-sm shadow-light-blue-2
+  }
+}

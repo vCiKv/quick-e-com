@@ -1,0 +1,44 @@
+[
+  {
+    "title": "title 1",
+    "price": 10,
+    "roi":12,
+    "description": [
+      "up to $29,999",
+      "2 years duration"
+    ],
+    "buttonText": "get started",
+    "buttonVariant": "outlined",
+    "icon":"growth.svg",
+    "min":10,
+    "max":29999
+  },
+  {
+    "title": "title 2",
+    "price":30000,
+    "roi":21,
+    "description": [
+      "up to $99,000",
+      "3 years duration"
+    ],
+    "buttonText": "get started",
+    "buttonVariant": "outlined",
+    "icon":"data analytic.svg",
+    "min":30000,
+    "max":99000
+  },
+  {
+    "title": "title 3",
+    "price": "100000",
+    "roi":42,
+    "description": [
+      "unlimited",
+      "5 years duration"
+    ],
+    "buttonText": "get started",
+    "buttonVariant": "outlined",
+    "icon":"database.svg",
+    "min":100000,
+    "max":1000000
+  }
+]

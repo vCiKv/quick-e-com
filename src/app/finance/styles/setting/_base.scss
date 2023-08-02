@@ -1,0 +1,299 @@
+// Colors
+
+// The color palette
+// 
+// light: (
+// 	1: #ECEDED,
+// 	2: #9CA9B3,
+// 	3: #717D86
+// ),
+$palette: (
+	light: (
+		1: #ffffff,
+		2: #d7d9db,
+		3: #c0c7c7
+	),
+	dark: (
+		1: #151719,
+		2: #25282C,
+		3: #33363A
+	),
+	primary: (
+		1: #6163FF,
+		2: #ACADFF,
+		3: #5658DD,
+		4: #E9E9FF
+ 	),
+	
+	secondary: (
+		//1: #24E5AF ,
+		//38A3A5 372549
+ 		1: #C2EABD,
+		2: #73EFCC,
+		3: #1CB68B,
+		4: #D2F9EE
+	),
+	alert: (
+		error: #FF6171,
+		error2: #d32f2f,
+		warning: #FFA173,
+		success: #24E5AF
+	),
+	gradient: (
+		1:linear-gradient(226deg,  #50eaff99 0%, #2862FF99 40%, #C411EE99 81%, #f4111299 112%)
+	)
+); 
+$bg-gradient:linear-gradient(226deg, #50eaff99 0%, #2862FF99 40%, #C411EE99 81%, #f4111299 112%);
+
+// Base typography: color
+$color: (
+	heading:				get-color(light, 1),
+	base: 					get-color(light, 2),
+	high-contrast: 			get-color(light, 1),
+	mid-contrast: 			get-color(light, 2),
+	low-contrast: 			get-color(light, 3),
+	primary:				get-color(primary, 3),
+	accent:					get-color(primary,2),
+	secondary:				get-color(secondary, 1),
+	error:					get-color(alert, error),
+	warning:				get-color(alert, warning),
+	success:				get-color(alert, success),
+	// ↓ Inverted colors
+	heading-inverse:		get-color(dark, 1),
+	base-inverse:			get-color(light, 3),
+	high-contrast-inverse: 	get-color(dark, 1),
+	mid-contrast-inverse: 	get-color(dark, 2),
+	low-contrast-inverse: 	get-color(light, 3)
+);
+
+// Borders and dividers: color
+$border--color: (
+	divider:			get-color(dark, 2),
+	divider-inverse:	get-color(light, 1)
+);
+
+// Icons: fill color
+$icon--color: (
+	hamburger:				get-color(light, 2),			// hamburger icon
+	accordion:				get-color(primary, 1),			// accordion icon
+	social: 				get-color(primary, 1),			// social icons
+	social-hover: 			get-color(primary, 2),			// social icons (:hover)
+	modal:					get-color(light, 3),			// modal icon
+	modal-hover:			get-color(light, 2),			// modal icon (:hover)
+    news-more:			    get-color(primary, 2),		// news - read more link arrow    
+	// ↓ Inverted colors
+	hamburger-inverse:		get-color(dark, 2),				// hamburger icon
+	accordion-inverse:		get-color(primary, 1),			// accordion icon
+	social-inverse: 		null,							// social icons
+	social-hover-inverse: 	null							// social icons (:hover)
+);
+
+// Misc elements: background color
+$bg--color: (
+	body: 			get-color(dark, 1),
+	body-shadow:	0 20px 48px rgba(get-color(dark, 1), .8),	// body shadow when a boxed layout is used (set to null if don't want a shadow)
+	body-outer:		lighten(get-color(dark, 1), 2%),			// outer bg color when a boxed layout is used
+	bg-color: 		lighten(get-color(light, 1), 9%),			// .has-bg-color helper class
+	shadow: 		0 24px 64px rgba(get-color(dark, 1), .64),	// .has-shadow helper class
+	code: 			darken(get-color(dark, 1), 3%),
+	code-inverse:	darken(get-color(dark, 1), 3%),
+	check-checked-inverse:	darken(get-color(dark, 1), 3%),
+	error: lighten(get-color(alert, error), 9%)
+);
+
+
+// Links
+
+// Color
+$link--color: (
+	link: 								get-color(light, 1),
+	link-hover: 						null,
+	header-link: 						get-color(light, 2),
+	header-link-hover: 					get-color(light, 1),
+	header-link-mobile: 				get-color(light, 1),
+	header-link-mobile-hover: 			null,
+	footer-link: 						get-color(light, 2),
+	footer-link-hover: 					get-color(light, 1),
+	footer-block-link: 					get-color(light, 2),
+	footer-block-link-hover: 			get-color(light, 1),
+	button-link: 						get-color(light, 2),
+	button-link-hover: 					get-color(light, 1),
+	func-link: 							null,
+	func-link-hover: 					null,	
+	// ↓ Inverted colors
+	link-inverse: 						get-color(light, 3),
+	link-hover-inverse: 				null,
+	header-link-inverse: 				get-color(dark, 3),
+	header-link-hover-inverse:			get-color(primary, 1),
+	footer-link-inverse: 				null,
+	footer-link-hover-inverse: 			null,
+	footer-block-link-inverse: 			null,
+	footer-block-link-hover-inverse:	null,
+	button-link-inverse: 				null,
+	button-link-hover-inverse:			get-color(primary, 1),
+	func-link-inverse: 					null,
+	func-link-hover-inverse:			get-color(primary, 1)	
+);
+// Base elements: font size
+$font--size: (
+	// ↓ Mobile 	// key in $font--scale
+	h1:				'beta',
+	h2:				'gamma',
+	h3:				'delta',
+	h4:				'delta',
+	base:			'epsilon',
+	sm:				'zeta',
+	xs:				'eta',
+	xxs:			'theta',
+	bquote: 		'epsilon',
+	figcap: 		'theta',
+	code: 			'eta',
+	pre: 			'eta',
+	table: 			'eta',
+	// ↓ Desktop (set to null if font size won't change on desktop)
+	h1-desktop:		'alpha',
+	h2-desktop:		'beta',
+	h3-desktop:		'gamma',
+	h4-desktop:		null,
+	base-desktop:	null,
+	sm-desktop:		null,
+	xs-desktop:		null,
+	xxs-desktop:	null,
+	bquote-desktop: null,
+	figcap-desktop: null,
+	code-desktop:	null,
+	pre-desktop:	null,
+	table-desktop: 	null
+);
+
+// Base elements: font weight
+$font--weight: (
+	heading:	800,
+	base: 		400,
+	strong:		700,
+	bquote: 	600,
+	figcap: 	null,
+);
+
+// Font-weight
+$link--weight: (
+	link: 				null,
+	header-link:		500,
+	footer-link:		null,
+	footer-block-link:	null,
+	button-link:		null
+);
+
+// Text decoration
+$link-main--decoration: 				none;
+$link-main--decoration-hover: 			null;
+$link-header--decoration: 				null;
+$link-header--decoration-hover:			null;
+$link-footer--decoration: 				null;
+$link-footer--decoration-hover: 		null;
+$link-footer-block--decoration: 		null;
+$link-footer-block--decoration-hover:	null;
+$link-button--decoration: 				null;
+$link-button--decoration-hover: 		null;
+$link-func--decoration: 				null;
+$link-func--decoration-hover: 			null;
+
+// Text transform
+$link-header--transform: 		null;
+$link-footer--transform: 		null;
+$link-footer-block--transform: 	null;
+$link-button--transform: 		null;
+$link-func--transform: 			null;
+
+// Don't change lines below!
+$color:			map-push($color, $link--color);
+$font--weight: 	map-push($font--weight, $link--weight);
+
+// Typography
+
+$font--provider:    'Google Fonts';
+$font--import:      'Inter:400,500,600,700,800';
+
+// The font set
+$font--family: (
+	heading: 	'"Inter", sans-serif',
+	base:		'"Inter", sans-serif',
+	code: 		'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace',
+	pre: 		'"Courier 10 Pitch", Courier, monospace'
+);
+
+// The typographic scale
+$font--scale: (
+	// key 		// font-size, line-height, kerning
+	alpha:   	( 52px, 62px, -0.3px ),
+	beta:    	( 44px, 54px, -0.3px ),
+	gamma:   	( 32px, 42px, -0.3px ),
+	delta:   	( 24px, 34px, -0.1px ),
+	epsilon: 	( 20px, 30px, -0.1px ),
+	zeta:    	( 18px, 28px, -0.1px ),
+	eta:     	( 16px, 24px, -0.1px ),
+	theta:   	( 14px, 22px, null )
+);
+
+
+// Widths and spacing
+
+// Breakpoints
+$breakpoints: (
+	small:	480px,
+	medium: 790px,
+	large: 	820px
+);
+
+// Containers widths
+$container--width-boxed: 		1440px;		// boxed container width
+$container--width: 				1080px;		// container width
+$container--width-sm:			896px;		// container sm width
+$container--width-xs: 			620px;		// container xs width
+$container--padding__mobile:	16px;		// container, left and right padding (mobile)
+$container--padding__desktop:	24px;		// container, left and right padding (desktop)
+
+// Global spacing
+$spacing--shared-v: 	24px;				// used on many different elements (e.g. hr, ul, ol and more)
+$spacing--shared-h: 	24px;
+$spacing--h1-t: 		48px;
+$spacing--h1-b: 		32px;
+$spacing--h2-t: 		48px;
+$spacing--h2-b: 		32px;
+$spacing--h3-t: 		36px;
+$spacing--h3-b: 		24px;
+$spacing--hx-t: 		24px;
+$spacing--hx-b: 		24px;
+$spacing--figure-v: 	48px;
+$spacing--figure-h: 	0;
+$spacing--figcaption-v:	8px;
+$spacing--figcaption-h: 0;
+$spacing--table-cell-v:	8px;
+$spacing--table-cell-h: 16px;
+$spacing--code-v: 		2px;
+$spacing--code-h: 		4px;
+
+// Sections spacing
+$section--padding__mobile: 			48px;		// section, top and bottom padding (mobile)
+$section--padding__desktop: 		80px;		// section, top and bottom padding (desktop)
+$section-header--padding__mobile:	48px;		// section header, bottom padding (mobile)
+$section-header--padding__desktop: 	80px;		// section header, bottom padding (desktop)
+
+
+$scroll-reveal--transition-duration: 0.8s;
+$scroll-reveal--transition-timing: cubic-bezier(0.39, 0.575, 0.565, 1);
+$scroll-reveal--from-top-amount: -10px;
+$scroll-reveal--from-bottom-amount: 10px;
+$scroll-reveal--from-left-amount: -10px;
+$scroll-reveal--from-right-amount: 10px;
+$scroll-reveal--scale-up-amount: 0.95;
+$scroll-reveal--scale-down-amount: 1.05;
+$scroll-reveal--rotate-from-left-amount: -45deg;
+$scroll-reveal--rotate-from-right-amount: 45deg;
+
+
+// Larger images, extra width
+$image-larger--extra-width:	48px;			// left and right exceeding pixels (.image-larger)
+
+// img radius
+$img-radius: 2px;
