@@ -10,7 +10,7 @@ const sectionHeader = {
     </>
   ),
   subtitle: "our services",
-  paragraph:"Whether you are a beginner or a professional financial markets trader/investor in the online investment field, we are sure that you will find our platform easy and very userfriendly Kasd stet accusam dolores sanctus voluptua dolor gubergren sed lorem. Dolore sea."
+  paragraph:"userfriendly Kasd stet accusam dolores sanctus voluptua dolor gubergren sed lorem. Dolore sea."
 };
 
 const splitData = [
