@@ -19,32 +19,6 @@ const Cta = (props: PropType) => {
   return (
     <section className={outerClasses}>
       <div className="container">
-        {/* <div className="">
-          <h2 className="mt-0 mb-16" style={{ textAlign: "center" }}>
-            Our <span className="text-color-primary">Future</span>
-          </h2>
-        </div> */}
-        {/* <Typography
-          variant="subtitle1"
-          className="text-color-mid"
-          my={2}
-          sx={{ display: "block", textAlign: "left" }}
-        >
-          With many more projects in the works slated for 2022 and 2023 it is an
-          exciting time for MyCompany one of which includes expanding and
-          diversifying into Agriculture a low-risk investment that keeps pace
-          with inflation and Mineral rights adding into our Real-Estate
-          portfolio while exploring oil and gas, causing major positive changes
-          in our existing system so watch out and sign up to our monthly
-          newsletters to be the first to know Et erat invidunt invidunt duo vero
-          vero eos accusam, consetetur at sea diam aliquyam dolor voluptua et
-          lorem, ea stet. <br />
-          <span className="is-link">
-            <Link href="/about" >
-              learn more about us
-            </Link>
-          </span>
-        </Typography> */}
         <div className={innerClasses}>
           <div className="cta-slogan">
             <h3 className="m-0 light-text">

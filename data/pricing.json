@@ -11,11 +11,11 @@
     "buttonVariant": "outlined",
     "icon":"growth.svg",
     "min":10,
-    "max":29999
+    "max":299
   },
   {
     "title": "title 2",
-    "price":30000,
+    "price":300,
     "roi":21,
     "description": [
       "up to $99,000",
@@ -24,8 +24,8 @@
     "buttonText": "get started",
     "buttonVariant": "outlined",
     "icon":"data analytic.svg",
-    "min":30000,
-    "max":99000
+    "min":300,
+    "max":990
   },
   {
     "title": "title 3",
@@ -38,7 +38,7 @@
     "buttonText": "get started",
     "buttonVariant": "outlined",
     "icon":"database.svg",
-    "min":100000,
+    "min":1000,
     "max":1000000
   }
 ]
