@@ -13,7 +13,7 @@ const FeaturesTiles = () => {
       </span>
     ),
     paragraph:
-      "Leave the hard parts to us, Unlock the potential of crypto assets, reshape your finances and start earning interest on your crypto",
+      "Sanctus sit est est ipsum tempor voluptua nonumy lorem voluptua, aliquyam sadipscing clita accusam elitr est justo, sed et amet.",
   };
 
   const points: {
@@ -34,7 +34,7 @@ const FeaturesTiles = () => {
     },
     {
       key: 5,
-      title: "High Income",
+      title: "High Value",
       text: " Voluptua dolor justo amet rebum lorem amet et.",
       icon: "/finance/icons/valuations.svg",
       alt: "value",
@@ -52,13 +52,13 @@ const FeaturesTiles = () => {
   const DisplayPoints = () => {
     //const data = props2.data reveal-from-bottom data-aos="fade-left"
     return (
-      <div className="features-tiles-inner section-inner pb-32">
+      <div className="pb-32 features-tiles-inner section-inner">
         <div className="tiles-wrap center-content">
           {points.map((point) => (
             <div key={point.key} className="tiles-item circle-shadow">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
+                  <div className="mb-16 features-tiles-item-image">
                     <Image
                       src={point.icon}
                       alt={point.alt}
@@ -90,7 +90,7 @@ const FeaturesTiles = () => {
             <SectionHeader
               data={sectionHeader}
               lightText
-              className="center-content pt-32 pb-32 pl-8 pr-8"
+              className="pt-32 pb-32 pl-8 pr-8 center-content"
             />
           </div>
         </div>
@@ -99,7 +99,7 @@ const FeaturesTiles = () => {
       {/* <div className="video-text">
         <div className="container pt-32">
           <div className="p-8">
-            <SectionHeader data={sectionHeader} className="center-content pt-32 pb-32 pl-8 pr-8" style={{}} />
+            <SectionHeader data={sectionHeader} className="pt-32 pb-32 pl-8 pr-8 center-content" style={{}} />
           </div>
         </div>
       </div>  */}
